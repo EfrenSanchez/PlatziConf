@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+    <title>PlatziCom</title>
+  </head>
+  <body data-spy="scroll" data-target="#navbar" data-offset="60">
+
+    <!-- Header -->
+    <header>
+      <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">
+           <img src="./images/platzi-logo.png" alt="Platzi logo">
+           Conf Hawaii
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#main">La conferencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#speakers">Los oradores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#place-time">Lugar y fecha</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#convierte-orador">Convierte en orador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-platzi" data-toggle="modal" data-target="#modalCompra" href="#">Comprar tickets</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- /Header -->
+
+    <!-- Main -->
+    <main id="main">
+      <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./images/hawaii.jpg" alt="Hawaii 1">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./images/hawaii2.jpg" alt="Hawaii 2">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./images/hawaii3.jpeg" alt="Hawaii 3">
+          </div>
+          <div class="overlay">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-6 offset-md-6 text-center text-md-right">
+                  <h1>Platzi Conf Hawaii</h1>
+                  <p class="d-none d-md-block">
+                    Platzi Conf llega por primera vez a Hawaii! Un evento para compartir
+                    con nuestra comunidad el conocimiento y experiencia de los expertos
+                    que están creando el futuro de internet. Ven a conocer a miembros del
+                    team Platzi y a los oradores de primer nivel que tenemos para ti. Te esperamos!
+                  </p>
+                  <a href="#convierte-orador" class="btn btn-outline-light">Quiero ser orador</a>
+                  <button type="button" class="btn btn-platzi" data-toggle="modal" data-target="#modalCompra">Comprar tickets</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- /Main -->
+
+    <!-- Speakers -->
+    <section id="speakers" class="mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center text-uppercase">
+            <small>Conoce a los</small>
+            <h2>Oradores</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="./speakers/sacha.jpg" alt="Sacha's">
+              <div class="card-body">
+                <h5 class="card-title mb-0">Sacha Lifszyc</h5>
+                <div class="badges mb-2">
+                  <span class="badge badge-warning">JavaScript</span>
+                  <span class="badge badge-info">React</span>
+                </div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="./speakers/freddy.jpeg" alt="Freddy's">
+              <div class="card-body">
+                <h5 class="card-title mb-0">Freddy Vega</h5>
+                <div class="badges mb-2">
+                  <span class="badge badge-success">IT</span>
+                </div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="./speakers/leonidas2.jpeg" alt="Leonida's">
+              <div class="card-body">
+                <h5 class="card-title mb-0">Leonidas Esteban</h5>
+                <div class="badges mb-2">
+                  <span class="badge badge-danger">FrontEnd</span>
+                  <span class="badge badge-info">React</span>
+                </div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="./speakers/cvander.jpeg" alt="Christian's">
+              <div class="card-body">
+                <h5 class="card-title mb-0">Christian Van Der H.</h5>
+                <div class="badges mb-2">
+                  <span class="badge badge-primary">Marketing</span>
+                </div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Speakers -->
+
+    <!-- Lugar y fecha -->
+    <section id="place-time">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-6 pl-0 pr-0">
+            <img src="./images/honolulu.jpg" alt="Honolulu" />
+          </div>
+          <div class="col-12 col-lg-6 pt-4 pb-4">
+            <h2 class="text-center mb-5">Honolulu - Octubre 2025</h2>
+            <p>Honolulu o Honolulú​ es la capital y localidad más grande del estado de Hawái,
+              en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses.
+              Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu,
+              la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la isla
+              (aproximadamente 600 km² de superficie)</p>
+              <a href="https://es.wikipedia.org/wiki/Honolulu" class="btn btn-outline-light" target="_blank">Conocer más</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Lugar y fecha -->
+
+    <!-- Conviertete en orador -->
+    <section id="convierte-orador" class="pt-3 pb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col text-uppercase text-center">
+            <small>Conviértete en un</small>
+            <h2>Orador</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            Anótate como orador para dar una charla <abbr data-toggle="tooltip" title="Charlas de 5 minutos">ignate.</abbr>
+            Cuéntanos de qué quieres hablar.
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pr-2">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-12 col-md-6">
+                  <input type="text" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="form-group col-12 col-md-6">
+                  <input type="text" class="form-control" placeholder="Apellido">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col">
+                  <textarea name="text" class="form-control form-control-lg" placeholder="Sobre qué quieres hablar?"></textarea>
+                  <small class="form-text text-muted">Recuerda incluir un título para tu charla</small>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <button type="button"class="btn btn-platzi btn-block">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Conviertete en orador -->
+
+    <!-- Footer -->
+    <footer id="footer" class="pb-4 pt-4">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12 col-lg"><a href="#">Preguntas frecuentes</a> </div>
+          <div class="col-12 col-lg"> <a href="#">Contáctenos</a> </div>
+          <div class="col-12 col-lg"> <a href="#">Prensa</a> </div>
+          <div class="col-12 col-lg"> <a href="#">Terminos y condiciones</a> </div>
+          <div class="col-12 col-lg"> <a href="#">Privacidad</a> </div>
+          <div class="col-12 col-lg"> <a href="#">Estudiantes</a> </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /Footer -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Comprar tickets</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">@</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+            </form>
+            <!-- Alert -->
+            <div class="alert alert-warning" role="alert">
+              Recibirás un correo de confirmación.
+            </div>
+            <!-- /Alert -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-platzi">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Modal -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
+
+
+
+<!--Plugins interesantes para Bootstrap 3 algunas ya se encuentran actualizados para Bootstrap 4:
+1. Fuel UX
+Fuel UX es una increíble colección de mejoras para Twitter Bootstrap. Todos los controles son limpios y ligeros, y se ajustan de forma natural al aspecto de Bootstrap. La colección incluye controles como datagrids, cajas de selección personalizadas, spinners, árboles, formularios en varios pasos y más.
+
+2. Jasny
+Jasny es otra colección de componentes para Bootstrap. Cuenta con controles como máscaras de entrada, botones de subida de archivos, iconos, estilos adicionales para otros componentes y demás. Existe una versión de Bootstrap con todos los cambios integrados que se puede descargar de forma separada o solo el plugin.
+
+3. Bootstrap Lightbox
+Bootstrap por defecto incluye un carrusel, pero se queda un pelín corto cuando necesitas mostrar la imagen en un lightbox. De eso es de lo que se ocupa Bootstrap Lightbox. Solamente debes añadir el código necesario y en los futuros carruseles que implementes en tu web tendrás la opción de ampliarlos mediante un lightbox responsive.
+
+4. Simple Lightbox
+Simple Lightbox es otro plugin para mostrar una vista previa de imágenes mediante una ventana modal, mucho más simple que el que te hemos mostrado antes. Para implementarlo solamente hay que añadir un atributo especial a la imagen.
+
+5. Bootstrap Image Gallery
+Bootstrap Image Gallery es una solución muy completa para crear galerías de imágenes en Bootstrap. Después de incluir los archivos necesarios en tu página, puedes conseguir una cuadrícula de imágenes que se abren en ventanas modales. La galería, de manera opcional, puede entrar en modo de pantalla completa.
+
+6. Bootbox.js
+Bootbox.js es una pequeña biblioteca JavaScript que automatiza el proceso de creación de los cuadros de diálogo en Bootstrap. Este plugin te lo pone bien sencillo, todo lo que tienes que hacer para mostrar un cuadro de diálogo en Bootstrap es llamar a una función. Es super útil para mostrar mensajes de alerta, de confirmación y de satisfacción.
+
+7. Bootstrap Modal
+Seguramente ya sabréis qué hace este plugin por su nombre. En efecto, Bootstrap Modal mejora la clase modal que hay en Bootstrap por defecto. Otorga la capacidad de cargar contenido en dichos modales a través de AJAX, cosa de lo que peca la opción por defecto.
+
+8. Bootstrap Growl
+Bootstrap Growl es un plugin que convierte las notificaciones de Bootstrap, en bonitas alertas Growl que se pueden personalizar al 100%. Puedes elegir la posición de la notificación respecto a la pantalla, las dimensiones, configurar una animación y el tiempo que tarda en desvanecerse.
+
+9. Bootstrap Notify
+Bootstrap Notify es una extensión muy fácil de utilizar para las notificaciones de Bootstrap. Al igual que Bootstrap Growl, con este plugin también puedes personalizar todos los aspectos de las notificaciones e incluso, hasta donde deben mostrarse.
+
+10. Bootstrap Form Helpers
+Bootstrap Form Helpers es una colección imprescindible para la mejora de formularios web. Viene con 12 plugins jQuery personalizados que te ofrecen de todo, desde nuevos controles para fecha y hora, listas de fuentes, campos para idioma y paises y demás.
+
+11. Bootstrap Tags
+Bootstrap Tags es un plugin ideal para la inserción de tags en formularios. Si pretendemos que un usuario deba introducir unos parámetros que deben ser recogidos por separado, Bootstrap Tags puede convertirse en tu mejor aliado para esa tarea. Además, el diseño de los tags puede personalizarse al 100% y no solo tiene soporte para tags, con este plugin también podrás crear popovers, placeholders y demás…
+
+12. Bootstrap Switch
+Una interfaz móvil no esta completa sin su control de estilo switch, y Bootstrap Switch te otorga el poder de poder llevarlo a cabo en tus páginas web siempre respetando el estilo de Bootstrap. Puedes personalizar el tamaño del control, así como los colores mediante la asignación de distintos nombre de clase al elemento.
+
+13. Bootstrap Markdown
+Bootstrap Markdown te permite la edición de Markdown en tus proyectos web de una manera fácil y sencilla. Solamente tendrás que agregar los archivos necesarios en tu página web, y ya podrás utilizarlo.
+
+14. Bootstrap Maxlength
+Bootstrap MaxLength es un pequeño plugin que detecta la propiedad maxlength de HTML en un campo de texto, y muestra un contador interactivo con los caracteres restantes. Es una gran compoenente que no está de más para añadirlo a los cuadros de texto de tus formularios.
+
+15. Bootstrap Select
+Bootstrap favorece los controles nativos del navegador. Sin embargo, en algunos proyectos es útil contar con controles personalizables, como los selects, y eso es lo que hace exáctamente Bootstrap Select. Este plugin te muestra un cuadro de selección bonito y personalizable que, de seguro, quedará muy bien en tu página.
+
+Fuente:https://programacion.net/articulo/50_plugins_para_bootstrap_que_deberias_estar_usando_ya_parte_1_1078 -->
